@@ -1,0 +1,41 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:t="sap.ui.table" controllerName="restservice.controllers.Main">
+<Page title="Welcome to UI5 App">
+	<Button text="Get All vendors" press="onLoadData"></Button>
+	<t:Table id="idTable">
+		<t:columns>
+			<t:Column>
+				<t:label >
+					<Text text="Vendor Name"></Text>
+				</t:label>
+				<t:template>
+					<Text text="{vName}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label >
+					<Text text="Vendor Contact"></Text>
+				</t:label>				
+				<t:template>
+					<Text text="{vContact}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label >
+					<Text text="Email"></Text>
+				</t:label>
+				<t:template>
+					<Text text="{vEmail}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label >
+					<Text text="Website"></Text>
+				</t:label>
+				<t:template>
+					<Text text="{vWebsite}"></Text>
+				</t:template>
+			</t:Column>			
+		</t:columns>
+	</t:Table>
+</Page>
+</mvc:View>
